@@ -1,0 +1,13 @@
+
+<html>
+    <head>
+        <title>Oi</title>
+    </head>
+    <body>
+    <script>
+        fetch('https://ieeexploreapi.ieee.org/api/v1/search/articles?apikey=zt4trhyr6dkfdgkt8vqhv5dy&format=json&max_records=25&start_record=1&sort_order=asc&sort_field=article_number&author=Oliver+Rubel')
+            .then(results => results.json())
+            .then(result => console.log(result))
+    </script>
+    </body>
+</html>
